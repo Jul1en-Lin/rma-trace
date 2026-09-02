@@ -2,9 +2,9 @@
 
 ## Current goal
 
-Goal: Publish the initial RMA Trace repository with project guidance and collaboration files.
+Goal: Prepare the initial RMA Trace repository for team collaboration.
 
-Status: In progress. Local repository is initialized; GitHub authentication needs renewal.
+Status: Complete. The public GitHub repository is published and ready for Fork-based contributions.
 
 ## Done
 
@@ -13,14 +13,17 @@ Status: In progress. Local repository is initialized; GitHub authentication need
 - Migrated the project charter, MVP Spec, and team work breakdown.
 - Added individual assignment documents for A, B, C, D, and E.
 - Added repository, Fork, Issue, PR, and local configuration guidance.
+- Published `https://github.com/Jul1en-Lin/rma-trace`.
+- Protected `main` with pull request, review, CODEOWNERS, and conversation-resolution requirements.
+- Created course milestones for September 27, October 13, October 23, and November 1.
 
 ## In progress
 
-- Review the initial file set, create the first commit, and publish the public GitHub repository.
+- Team review of the initial Spec and individual assignment documents.
 
 ## Blocked / Questions
 
-- GitHub CLI credentials for `Jul1en-Lin` are expired and must be renewed before publishing.
+- None.
 
 ## Checkpoints
 
@@ -31,6 +34,6 @@ Status: In progress. Local repository is initialized; GitHub authentication need
 
 ## Next actions
 
-1. Authenticate GitHub CLI.
-2. Commit the initial repository files.
-3. Create and push the public `Jul1en-Lin/rma-trace` repository.
+1. Let B, C, D, and E read their assignment documents.
+2. Ask each member to Fork the repository and submit a practice pull request.
+3. Convert the work breakdown into GitHub Issues with dependencies and deadlines.
