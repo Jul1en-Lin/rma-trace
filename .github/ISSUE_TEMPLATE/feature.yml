@@ -1,0 +1,53 @@
+name: Feature task
+description: 一个可以独立验收的功能任务
+title: "[Feature] "
+labels:
+  - feature
+body:
+  - type: textarea
+    id: goal
+    attributes:
+      label: 业务目标
+      description: 用户完成什么操作，系统产生什么结果？
+    validations:
+      required: true
+  - type: textarea
+    id: scope
+    attributes:
+      label: 范围
+      description: 写明包含和不包含的内容。
+    validations:
+      required: true
+  - type: textarea
+    id: database
+    attributes:
+      label: 数据库
+      description: 涉及哪些表、关系和约束？
+    validations:
+      required: true
+  - type: textarea
+    id: delivery
+    attributes:
+      label: 页面与接口
+      description: 需要交付哪些页面、接口和 SQL？
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: 验收条件
+      description: 使用清单写出可以判断完成的条件。
+      value: |
+        - [ ] 正常场景可以完成
+        - [ ] 异常输入有明确提示
+        - [ ] 数据库结果正确
+        - [ ] 已提供测试证据或截图
+    validations:
+      required: true
+  - type: textarea
+    id: blockers
+    attributes:
+      label: 依赖
+      description: 列出阻塞本任务的 Issue；没有则写 None。
+    validations:
+      required: true
