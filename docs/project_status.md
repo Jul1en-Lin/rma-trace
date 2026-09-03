@@ -17,10 +17,12 @@ Business implementation has not started. The current phase only covers table fie
 - Assigned two or three table drafts to B, C, D, and E; A owns cross-module review and SQL integration.
 - Defined the product, application, RMA, inspection, repair, warranty, identifier, and state rules.
 - Updated the Spec, project charter, work breakdown, glossary, and individual assignments.
+- Created field-design Issues #2–#5 for B, C, D, and E, plus Issue #6 for A's cross-module review and total ER diagram.
 
 ## In progress
 
-- B, C, D, and E review their reduced assignments.
+- Pull Request #1 waits for the required review before the updated documents can enter `main`.
+- B, C, D, and E review their reduced assignments and field-design Issues.
 - Module owners propose fields, data types, nullability, indexes, and local constraints.
 - A prepares the total ER diagram after reviewing the module proposals.
 
@@ -28,6 +30,7 @@ Business implementation has not started. The current phase only covers table fie
 
 - Course requirements for procedures, triggers, views, indexes, tool versions, and report format remain unknown until the teacher briefing.
 - `schema.sql` and `demo-data.sql` wait for the four module field proposals and A's relationship review.
+- B, C, D, and E cannot be added as GitHub assignees until their GitHub usernames are known and assignable.
 
 ## Checkpoints
 
@@ -38,8 +41,9 @@ Business implementation has not started. The current phase only covers table fie
 
 ## Next actions
 
-1. Let B, C, D, and E review the updated assignment documents.
-2. Create one field-design Issue for each member's owned tables.
-3. Review the four module ER drafts together before writing the total DDL.
-4. Convert the approved fields and relationships into `schema.sql` and `demo-data.sql`.
-5. Create implementation Issues only after the database skeleton is approved.
+1. Obtain the required review and merge Pull Request #1.
+2. Add the GitHub usernames of B, C, D, and E as assignees on Issues #2–#5.
+3. Let B, C, D, and E submit their field proposals and module ER diagrams.
+4. Review the four module ER drafts together in Issue #6 before writing the total DDL.
+5. Convert the approved fields and relationships into `schema.sql` and `demo-data.sql`.
+6. Create implementation Issues only after the database skeleton is approved.
