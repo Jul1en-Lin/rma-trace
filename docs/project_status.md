@@ -2,28 +2,32 @@
 
 ## Current goal
 
-Goal: Prepare the initial RMA Trace repository for team collaboration.
+Goal: Complete the nine-table entity design and prepare module field proposals.
 
-Status: Complete. The public GitHub repository is published and ready for Fork-based contributions.
+Status: In progress. The reduced MVP, table ownership, relationship skeleton, state rules, and required/optional scope are documented.
+
+Business implementation has not started. The current phase only covers table fields, module ER diagrams, and cross-module relationship review.
 
 ## Done
 
-- Initialized `/Users/lien/prj/rma-trace` with `main` as the default branch.
-- Added the lightweight agent workflow.
-- Migrated the project charter, MVP Spec, and team work breakdown.
-- Added individual assignment documents for A, B, C, D, and E.
-- Added repository, Fork, Issue, PR, and local configuration guidance.
-- Published `https://github.com/Jul1en-Lin/rma-trace`.
-- Protected `main` with pull request, review, CODEOWNERS, and conversation-resolution requirements.
-- Created course milestones for September 27, October 13, October 23, and November 1.
+- Initialized and published the repository with the Fork and PR workflow.
+- Reduced the first version from sixteen data objects to nine tables.
+- Defined the mandatory five-page, single-flow demonstration scope.
+- Moved replacement, component batches, dynamic RBAC, deletion, repeated repair, and statistics to optional scope.
+- Assigned two or three table drafts to B, C, D, and E; A owns cross-module review and SQL integration.
+- Defined the product, application, RMA, inspection, repair, warranty, identifier, and state rules.
+- Updated the Spec, project charter, work breakdown, glossary, and individual assignments.
 
 ## In progress
 
-- Team review of the initial Spec and individual assignment documents.
+- B, C, D, and E review their reduced assignments.
+- Module owners propose fields, data types, nullability, indexes, and local constraints.
+- A prepares the total ER diagram after reviewing the module proposals.
 
 ## Blocked / Questions
 
-- None.
+- Course requirements for procedures, triggers, views, indexes, tool versions, and report format remain unknown until the teacher briefing.
+- `schema.sql` and `demo-data.sql` wait for the four module field proposals and A's relationship review.
 
 ## Checkpoints
 
@@ -34,6 +38,8 @@ Status: Complete. The public GitHub repository is published and ready for Fork-b
 
 ## Next actions
 
-1. Let B, C, D, and E read their assignment documents.
-2. Ask each member to Fork the repository and submit a practice pull request.
-3. Convert the work breakdown into GitHub Issues with dependencies and deadlines.
+1. Let B, C, D, and E review the updated assignment documents.
+2. Create one field-design Issue for each member's owned tables.
+3. Review the four module ER drafts together before writing the total DDL.
+4. Convert the approved fields and relationships into `schema.sql` and `demo-data.sql`.
+5. Create implementation Issues only after the database skeleton is approved.
