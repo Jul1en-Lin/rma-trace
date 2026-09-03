@@ -36,7 +36,7 @@ Consumer Electronics After-Sales and Product Traceability System
 
 ## 协作方式
 
-B、C、D、E Fork 本仓库，在个人 Fork 的功能分支开发，然后向本仓库的 `main` 发起 Pull Request。A 可以从本机直接推送 `main`；合并成员 PR 时使用 merge commit。
+主仓库位于 [Gitee](https://gitee.com/Jul1en_lin/rma-trace)。B、C、D、E Fork 本仓库，在个人 Fork 的功能分支开发，然后向主仓库的 `main` 发起 Pull Request。A 可以从本机直接推送 `main`；合并成员 PR 时使用 merge commit。
 
 开始开发前请先阅读 [协作规则](CONTRIBUTING.md)。
 

@@ -4,7 +4,7 @@
 
 - A 管理上游仓库，可以从本机直接提交并推送 `main`，同时审核和合并成员 PR。
 - B、C、D、E 使用个人 Fork 开发。
-- GitHub Issues 记录任务、负责人、依赖、截止日期和验收条件。
+- Gitee Issues 记录任务、负责人、依赖、截止日期和验收条件。
 
 ## A 的本机操作
 
@@ -25,12 +25,12 @@ git push origin main
 
 ## 首次设置
 
-先在 GitHub Fork `Jul1en-Lin/rma-trace`，然后执行：
+先在 Gitee Fork `Jul1en_lin/rma-trace`，然后执行：
 
 ```bash
-git clone https://github.com/<你的用户名>/rma-trace.git
+git clone https://gitee.com/<你的用户名>/rma-trace.git
 cd rma-trace
-git remote add upstream https://github.com/Jul1en-Lin/rma-trace.git
+git remote add upstream https://gitee.com/Jul1en_lin/rma-trace.git
 git remote -v
 ```
 
@@ -43,15 +43,15 @@ git switch main
 git fetch upstream
 git merge upstream/main
 git push origin main
-git switch -c feat/<issue-number>-<short-name>
+git switch -c feat/<issue-id>-<short-name>
 ```
 
 分支示例：
 
 ```text
-feat/12-warranty-query
-fix/27-rma-status-check
-docs/31-product-er
+feat/IKD1O1-warranty-query
+fix/IKD1M5-rma-status-check
+docs/IKD1O1-product-er
 ```
 
 ## 提交与推送
@@ -68,7 +68,7 @@ test: add service request validation cases
 开发完成后推送个人分支：
 
 ```bash
-git push -u origin feat/<issue-number>-<short-name>
+git push -u origin feat/<issue-id>-<short-name>
 ```
 
 ## Pull Request
@@ -76,7 +76,7 @@ git push -u origin feat/<issue-number>-<short-name>
 创建 PR 时确认：
 
 ```text
-base repository: Jul1en-Lin/rma-trace
+base repository: Jul1en_lin/rma-trace
 base branch: main
 head repository: <你的用户名>/rma-trace
 compare branch: 你的功能分支
@@ -95,7 +95,7 @@ A 合并成员 PR 时使用 merge commit，保留 no-ff 的分支历史。
 
 ## 文档同步
 
-代码修改影响业务规则、表结构、接口或职责时，在同一个 PR 内更新对应文档。个人任务书不记录每日进度，实时状态只写入 GitHub Issues。
+代码修改影响业务规则、表结构、接口或职责时，在同一个 PR 内更新对应文档。个人任务书不记录每日进度，实时状态只写入 Gitee Issues。
 
 ## 求助方式
 

@@ -90,7 +90,7 @@ sql/
 数据访问：MyBatis-Plus
 数据库：MySQL 8
 项目管理：Maven
-协作：GitHub Issues + Fork + Pull Request
+协作：Gitee Issues + Fork + Pull Request
 ```
 
 MyBatis-Plus 用于普通单表操作；跨表查询、产品追查和统计查询使用 Mapper XML 或手写 SQL。项目保留 Controller、Service、Mapper 三层。

@@ -1,6 +1,6 @@
 # Triage Labels
 
-The engineering skills use five canonical triage roles. This file maps those roles to the labels used in this repository.
+The engineering skills use five canonical triage roles. This file maps those roles to the Gitee labels used in this repository.
 
 | Label in mattpocock/skills | Label in this repository | Meaning |
 | --- | --- | --- |

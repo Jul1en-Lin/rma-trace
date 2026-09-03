@@ -2,11 +2,11 @@
 
 ### Issue tracker
 
-Issues and specs are tracked in GitHub Issues. See `docs/agents/issue-tracker.md`.
+Issues and specs are tracked in Gitee Issues. See `docs/agents/issue-tracker.md`.
 
 ### Triage labels
 
-Use the canonical triage roles mapped to GitHub labels. See `docs/agents/triage-labels.md`.
+Use the canonical triage roles mapped to Gitee labels. See `docs/agents/triage-labels.md`.
 
 ### Domain docs
 
@@ -25,8 +25,8 @@ This repository contains a five-person database course project using Spring Boot
 
 ### Repository rules
 
-- Treat GitHub Issues as the source of truth for live task status.
-- A may commit and push directly to upstream `main` from the local checkout. B, C, D, and E contribute through Forks and pull requests.
+- Treat Gitee Issues as the source of truth for live task status.
+- A may commit and push directly to the Gitee upstream `main` from the local checkout. B, C, D, and E contribute through Gitee Forks and pull requests.
 - An agent pushes only when the current task explicitly authorizes it.
 - Keep each pull request scoped to one issue and include test evidence.
 - Update the related ER diagram and field documentation in the same pull request when table design changes.
