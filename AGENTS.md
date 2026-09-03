@@ -26,6 +26,8 @@ This repository contains a five-person database course project using Spring Boot
 ### Repository rules
 
 - Treat GitHub Issues as the source of truth for live task status.
+- A may commit and push directly to upstream `main` from the local checkout. B, C, D, and E contribute through Forks and pull requests.
+- An agent pushes only when the current task explicitly authorizes it.
 - Keep each pull request scoped to one issue and include test evidence.
 - Update the related ER diagram and field documentation in the same pull request when table design changes.
 - Use MyBatis-Plus for single-table CRUD and handwritten SQL for joins, reports, and traceability queries.
