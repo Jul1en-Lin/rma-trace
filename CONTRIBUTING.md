@@ -2,9 +2,26 @@
 
 ## 仓库角色
 
-- A 管理上游仓库、审核 PR 并执行最终合并。
+- A 管理上游仓库，可以从本机直接提交并推送 `main`，同时审核和合并成员 PR。
 - B、C、D、E 使用个人 Fork 开发。
 - GitHub Issues 记录任务、负责人、依赖、截止日期和验收条件。
+
+## A 的本机操作
+
+A 使用上游仓库的本地检出，不需要为自己的改动创建 PR：
+
+```bash
+git switch main
+git pull --ff-only origin main
+# 修改并检查相关文件
+git status --short
+git diff
+git add <本次相关路径>
+git commit -m "<type>: <summary>"
+git push origin main
+```
+
+每次提交只包含当前任务相关文件。直接推送不改变 B、C、D、E 的 Fork + PR 流程。
 
 ## 首次设置
 
@@ -74,7 +91,7 @@ PR 必须满足：
 - 个人配置、密码、IDE 文件和生成目录未进入提交。
 - A 提出的审核意见已经处理或说明原因。
 
-A 使用 merge commit 合并，保留 no-ff 的分支历史。
+A 合并成员 PR 时使用 merge commit，保留 no-ff 的分支历史。
 
 ## 文档同步
 

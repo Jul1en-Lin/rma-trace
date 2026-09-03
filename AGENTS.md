@@ -1,29 +1,17 @@
-<!-- BEGIN: setup-long-term-docs -->
+## Agent skills
 
-## Lightweight agent workflow
+### Issue tracker
 
-This repository uses a small project memory setup for short-lived projects, scripts, demos, and experiments.
+Issues and specs are tracked in GitHub Issues. See `docs/agents/issue-tracker.md`.
 
-### Documentation sources of truth
+### Triage labels
 
-- `docs/project_status.md`: current goal, progress, blockers, checks, and next actions.
-- `docs/agent_workflow.md`: lightweight status, commit, and handoff workflow.
+Use the canonical triage roles mapped to GitHub labels. See `docs/agents/triage-labels.md`.
 
-### Required rules
+### Domain docs
 
-- Read `docs/project_status.md` before making changes when it exists.
-- Update `docs/project_status.md` when meaningful progress is made, a blocker appears or is resolved, the next action changes, or work should be resumable later.
-- Keep updates short. Do not create extra planning documents unless the user asks.
-- Before any git commit, check whether `docs/project_status.md` should be updated.
-- Commit only files related to the current work. Do not sweep unrelated files into commits.
-- Do not push unless the user explicitly asks or the current task grants push/publish authorization.
-- Summarize changed files, checks run, and remaining risks.
+This is a single-context repository using the root `CONTEXT.md` and `docs/adr/`. See `docs/agents/domain.md`.
 
-### Detailed workflows
-
-For status, commit, and handoff details, read `docs/agent_workflow.md`.
-
-<!-- END: setup-long-term-docs -->
 ## RMA Trace
 
 This repository contains a five-person database course project using Spring Boot, MyBatis-Plus, MySQL 8, and a minimal HTML/CSS/JavaScript frontend.
@@ -32,16 +20,18 @@ This repository contains a five-person database course project using Spring Boot
 
 - For domain terms, scope, and fixed decisions, read `CONTEXT.md`.
 - For business behavior, states, pages, APIs, and acceptance scenarios, read `docs/spec/MVP_SPEC.md`.
-- For ownership and review boundaries, read `docs/assignments/<member>.md` and `CODEOWNERS`.
+- For ownership and review boundaries, read `docs/assignments/<member>.md` and `.github/CODEOWNERS`.
 - For Fork, branch, commit, and PR steps, read `CONTRIBUTING.md`.
 
 ### Repository rules
 
 - Treat GitHub Issues as the source of truth for live task status.
+- A may commit and push directly to upstream `main` from the local checkout. B, C, D, and E contribute through Forks and pull requests.
+- An agent pushes only when the current task explicitly authorizes it.
 - Keep each pull request scoped to one issue and include test evidence.
 - Update the related ER diagram and field documentation in the same pull request when table design changes.
 - Use MyBatis-Plus for single-table CRUD and handwritten SQL for joins, reports, and traceability queries.
 - Keep Controller, Service, and Mapper responsibilities separate.
 - Store only example configuration in Git. Keep credentials in ignored local files.
 - Preserve user-authored changes outside the current issue.
-- A owns the integrated schema; C, D, and E own the first draft of their module tables and ER diagrams.
+- A owns the integrated schema; B, C, D, and E own the first draft of their module tables and ER diagrams.

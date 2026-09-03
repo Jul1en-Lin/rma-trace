@@ -2,7 +2,7 @@
 
 Consumer Electronics After-Sales and Product Traceability System
 
-消费电子产品售后维修与产品追溯管理系统。项目以产品 SN 为入口，覆盖保修查询、售后申请、RMA、检测维修、换新结案和产品批次追查。
+消费电子产品售后维修与产品追溯管理系统。项目以产品 SN 为入口，覆盖产品数据管理、保修查询、售后申请、RMA、检测、维修、结案和生产批次追查。
 
 ## 项目状态
 
@@ -10,8 +10,6 @@ Consumer Electronics After-Sales and Product Traceability System
 - 数据库检查：2026-10-13
 - 系统答辩：2026-10-23
 - 报告提交：2026-11-01 前
-
-最新进度见 [项目状态](docs/project_status.md)。
 
 ## 技术方案
 
@@ -38,7 +36,7 @@ Consumer Electronics After-Sales and Product Traceability System
 
 ## 协作方式
 
-B、C、D、E Fork 本仓库，在个人 Fork 的功能分支开发，然后向本仓库的 `main` 发起 Pull Request。A 负责审核并使用 merge commit 合并。
+B、C、D、E Fork 本仓库，在个人 Fork 的功能分支开发，然后向本仓库的 `main` 发起 Pull Request。A 可以从本机直接推送 `main`；合并成员 PR 时使用 merge commit。
 
 开始开发前请先阅读 [协作规则](CONTRIBUTING.md)。
 
@@ -53,4 +51,4 @@ sql/schema.sql
 sql/demo-data.sql
 ```
 
-表结构有调整时，由模块负责人修改设计，A 检查总结构并更新当前 SQL 快照。
+第一版使用九张表。B、C、D、E 先提交本人负责表的字段初稿，A 检查实体关系和完整性后更新当前 SQL 快照。
