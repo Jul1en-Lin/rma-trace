@@ -11,8 +11,6 @@ Consumer Electronics After-Sales and Product Traceability System
 - 系统答辩：2026-10-23
 - 报告提交：2026-11-01 前
 
-最新进度见 [项目状态](docs/project_status.md)。
-
 ## 技术方案
 
 - Java + Spring Boot
